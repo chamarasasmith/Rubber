@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" styleClass="anchor-pane" stylesheets="@CSTheme1.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rubber.Main1Controller">
+   <children>
+      <VBox layoutX="93.0" layoutY="48.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="32.0" prefWidth="1180.0">
+               <children>
+                  <ImageView fx:id="close" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#close1" onMouseEntered="#en" onMouseExited="#ex" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/c1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="1180.0" spacing="10.0">
+               <children>
+                  <RadioButton fx:id="rup" mnemonicParsing="false" selected="true" text="Rupee">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="a" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="other1" mnemonicParsing="false" onAction="#setOther" text="Other" toggleGroup="$a">
+                     <HBox.margin>
+                        <Insets right="100.0" />
+                     </HBox.margin>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="72.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#setSuplier" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#setCustomer" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#setProduct" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/5.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#setInvoice" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/4.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#setGrn" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/8.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#setAccounts" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#setCheque" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/6.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#setOrders" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/7.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/9.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#setSettings" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/10.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <AnchorPane fx:id="map" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
